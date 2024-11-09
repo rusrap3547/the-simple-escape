@@ -1,0 +1,15 @@
+{
+  "name": "the-simple-escape",
+  "version": "1.0.0",
+  "description": "This is going to be a first attempt at a text based adventure",
+  "main": "main.js",
+  "scripts": {
+    "test": "superUltimateTestGo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "the-simple-escape"
+  },
+  "author": "",
+  "license": "MIT"
+}
