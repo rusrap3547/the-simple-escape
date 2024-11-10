@@ -25,7 +25,3 @@ function runCommand(command) {
   // Mark the command as run
   commandHistory[command] = true;
 }
-
-// Example usage
-runCommand("lookAround");
-runCommand("lookAround"); // This will indicate the command has already been run
