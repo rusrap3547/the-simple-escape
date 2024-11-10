@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is going to be a first attempt at a text based adventure",
   "main": "main.js",
+  "type": "commonjs",
   "scripts": {
     "test": "superUltimateTestGo"
   },
