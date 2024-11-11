@@ -26,10 +26,37 @@ function runCommand(command) {
   commandHistory[command] = true;
 }
 
+//slow print by line function
 function printLineByLine(text, delay = 2000) {
-  const lines = text.split('\n');  
-  for (let index= 0; index < lines.length; index++ ) {
-    setTimeout(function(){return console.log(lines[index])},delay)
+  const lines = text.split("\n");
+  for (let index = 0; index < lines.length; index++) {
+    setTimeout(function () {
+      return console.log(lines[index]);
+    }, delay);
   }
+}
 
+//testing a process
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+function waitForEnter() {
+  return new Promise((resolve) => {
+    rl.question("Press Enter to continue...", () => {
+      resolve();
+    });
+  });
+}
+
+async function main() {
+  console.log("First process...");
+  await waitForEnter();
+  console.log("Second process...");
+  await waitForEnter();
+  console.log("Third process...");
+  rl.close();
 }
