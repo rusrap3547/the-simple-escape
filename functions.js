@@ -25,3 +25,11 @@ function runCommand(command) {
   // Mark the command as run
   commandHistory[command] = true;
 }
+
+function printLineByLine(text, delay = 2000) {
+  const lines = text.split('\n');  
+  for (let index= 0; index < lines.length; index++ ) {
+    setTimeout(function(){return console.log(lines[index])},delay)
+  }
+
+}
