@@ -4,21 +4,6 @@ export function randomChoice() {
 	return arr[randomIndex];
 }
 
-// Function to track if a command has been run before
-const commandHistory = {};
-
-function runCommand(command) {
-	if (commandHistory[command]) {
-		console.log(`The command "${command}" has already been run.`);
-		return;
-	}
-
-	// Execute the command
-	console.log(`Running command: ${command}`);
-
-	// Mark the command as run
-	commandHistory[command] = true;
-}
 
 //slow print by line function
 export function printLineByLine(text, delay = 2000) {
