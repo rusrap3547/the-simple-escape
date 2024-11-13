@@ -1,20 +1,21 @@
 {
-  "name": "the-simple-escape",
-  "version": "1.0.0",
-  "description": "This is going to be a first attempt at a text based adventure",
-  "main": "main.js",
-  "type": "commonjs",
-  "scripts": {
-    "test": "superUltimateTestGo"
-  },
-  "repository": {
-    "type": "git",
-    "url": "the-simple-escape"
-  },
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "inquirer": "^12.0.1",
-    "readline": "^1.3.0"
-  }
+	"name": "the-simple-escape",
+	"version": "1.0.0",
+	"description": "This is going to be a first attempt at a text based adventure",
+	"main": "main.js",
+	"type": "module",
+	"scripts": {
+		"test": "superUltimateTestGo",
+		"dev": "node main.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "the-simple-escape"
+	},
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"inquirer": "^12.0.1",
+		"readline": "^1.3.0"
+	}
 }
