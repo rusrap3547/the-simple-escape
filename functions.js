@@ -4,9 +4,8 @@ export function randomChoice() {
 	return arr[randomIndex];
 }
 
-
 //slow print by line function
-export function printLineByLine(text, delay = 2000) {
+export async function printLineByLine(text, delay = 1000) {
 	const lines = text.split("\n");
 	for (let index = 0; index < lines.length; index++) {
 		setTimeout(function () {
@@ -40,13 +39,13 @@ function waitForEnter() {
 // 	rl.close();
 // }
 
-//Need to add a function for inventory, Array? Object?
-export function inventory() {
-	const inventory = [];
-	return inventory;
-}
+// //Need to add a function for inventory, Array? Object?
+// export function inventory() {
+// 	const inventory = [];
+// 	return inventory;
+// }
 
-export function takeItem(item) {
-	inventory.push(item);
-	return inventory;
-}
+// export function takeItem(item) {
+// 	inventory.push(item);
+// 	return inventory;
+// }
